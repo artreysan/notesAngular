@@ -1,0 +1,29 @@
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="/">
+    Angular Simple CRUD
+  </a>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="list-group mt-4">
+        <!--Directiva de angular-->
+        <li *ngFor="let employee of employeeArray"
+            class="list-group-item list-group-item-action">
+            {{employee.name}}
+        </li>
+      </ul>
+      <div class="card mt-4">
+        <div class="card-body">
+          <div class="card-title">
+            Insert A new Employee
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+  </div>
+</div>
