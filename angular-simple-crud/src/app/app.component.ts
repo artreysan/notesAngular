@@ -15,6 +15,7 @@ export class AppComponent {
     {id:3, name: "Joe", country:"US"}
   ];
 
+  selectEmployeee: Employee = new Employee();
 
 
 }
