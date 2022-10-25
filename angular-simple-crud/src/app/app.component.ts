@@ -15,7 +15,28 @@ export class AppComponent {
     {id:3, name: "Joe", country:"US"}
   ];
 
-  selectEmployeee: Employee = new Employee();
+  selectedEmployee: Employee = new Employee();
 
+  openForEdit(employee:Employee){
+    this.selectedEmployee = employee;
+  }
+  addOrEdit(){
+    if(this.selectedEmployee.id === 0){
+      //Change ID
+      this.selectedEmployee.id = this.employeeArray.length + 1;
+      //Save
+      this.employeeArray.push(this.selectedEmployee);
+    }
+
+    this.selectedEmployee = new Employee();
+  }
+
+  delete(){
+    if(confirm('Are you sure do you want to delete it?'))
+    {
+        this.employeeArray = this.employeeArray.filter(x => x != this.selectedEmployee);
+        this.selectedEmployee = new Employee();
+    }
+  }
 
 }
