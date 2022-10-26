@@ -11,6 +11,13 @@ npm install -g @angular/cli
 ng version
 ```
 
+## Create new Angular Proyect
+```
+ng new 
+```
+
+
+
 inside in angular proyect include of dependencies:
 
 ```
