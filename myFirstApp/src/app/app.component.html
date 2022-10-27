@@ -1,0 +1,33 @@
+<hello-world></hello-world>
+
+<h2>Declaración</h2>
+{{users}}
+
+<h2>Recorre Arreglo</h2>
+<ul>
+    <li>{{users[0]}}</li>
+    <li>{{users[1]}}</li>
+    <li>{{users[2]}}</li>
+</ul>
+
+<h2>ngFor</h2>
+<ul>
+    <!--Directivas -->
+    <li *ngFor="let u of users">{{u}}</li>
+</ul>
+
+<h2>Paso de informacion por Input</h2>
+<ul>
+    <!-- Traspaso de informacion-->
+    <app-user *ngFor="let u of users" [nameUser]="u"></app-user>
+</ul>
+
+<app-hola-mundo></app-hola-mundo>
+
+
+<div>
+    <p>name: {{name}}</p>
+    <p>name: {{age}}</p>
+    <p>name: {{address}}</p>
+</div>
+
