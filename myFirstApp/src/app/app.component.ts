@@ -7,25 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class AppComponent {
-    users = ['Joe','Ana','Milly','Suzan'];
+    users: string[] = ['Joe','Ana','Milly','Suzan'];
 
-
-    //Buenas practicas
-    name: string = 'Ray Ray';
-    age:number | undefined;
-    address: {
-        street: string;
-        city: string;
-    } | undefined;
-    hobbies: string[] | undefined;
-
-    constructor(){
-        this.age = 28;
-
-        this.address = {
-            street: '2218 Baker Street',
-            city: 'London'
-        }
-        this.hobbies = ['swimming','read', 'write']
+    sayHello(){
+        alert("Hello");
     }
 }
