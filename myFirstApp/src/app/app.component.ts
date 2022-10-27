@@ -21,6 +21,7 @@ export class AppComponent {
 
     constructor(){
         this.age = 28;
+
         this.address = {
             street: '2218 Baker Street',
             city: 'London'

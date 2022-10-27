@@ -28,6 +28,15 @@
 <div>
     <p>name: {{name}}</p>
     <p>name: {{age}}</p>
-    <p>name: {{address}}</p>
+    <p>name: {{address?.street}}</p>
+    <p>name: {{address?.city}}</p>
+    <ul>
+        <li *ngFor="let h of hobbies">
+                {{h}}
+        </li>
+    </ul>
 </div>
 
+<div>
+
+</div>
