@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
     selector: 'app-root',
@@ -7,20 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class AppComponent {
-    users: string[] = ['Joe','Ana','Milly','Suzan'];
 
-    deleteUser(u: string){
-        for(let i = 0; i<this.users.length;i++){
-            if(u == this.users[i]){
-                this.users.splice(i,1);
-            }
-        }
-    }
+    constructor(private servicio:DataService){
 
-    addUser(nuevoUsuario: { value: string; focus: () => void; } ){
-        this.users.push(nuevoUsuario.value);
-        nuevoUsuario.value=''
-        nuevoUsuario.focus();
-        return false;
     }
 }

@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Crear un servicio
+```
+ng generate service [name] 
+```
+Simplificate:
+```
+ng g s [name]
+```
+Example:
+```
+ng g s data
+```
+Two files are created:
+```
+CREATE src/app/data.service.spec.ts (332 bytes)
+CREATE src/app/data.service.ts (130 bytes)
+```
+
+
